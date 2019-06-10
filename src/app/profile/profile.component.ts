@@ -19,7 +19,7 @@ export class ProfileComponent implements OnInit {
   }
 
   fetchRepos() {
-    const repos = (environment.apiUrl) ;
+    const repos = ('https://api.github.com/users/roychela' + '?access_token=' + environment.apiUrl) ;
 
 
     this.http.get(repos).subscribe((data) => {
