@@ -1,3 +1,53 @@
-<p>
-  searchform works!
-</p>
+<div class="container">
+  <div class="row">
+    <div class="col">
+      <form #gitform='ngForm' class="form-search">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Enter Github Username" [(ngModel)]="username" name="username"
+            (keyup)="findProfile()">
+        </div>
+      </form>
+      <div class='row'>
+        <div class="col-md-6">
+          <div *ngIf="user">
+            <p>{{user.name}}</p>
+            <p><a href="{{user.html_url}}" target="blank">{{user.login}}</a></p>
+            <p>{{user.company}}</p>
+          </div>
+          <img src="{{user.avatar_url}}" width="300px" height="300px" class="img-circle img-responsive"
+            alt="user-image">
+          <p>{{user.email}}</p>
+          <hr>
+          <div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <p>
+            <span class="label label-primary" *ngIf="user.following"> Following {{user.following}} </span>
+            <span class="label label-primary" *ngIf="user.followers"> Followers {{user.followers}} </span><br>
+            <span class="label label-primary"> Repositories {{user.public_repos}} </span>
+          </p>
+          <p>
+            {{user.blog}}
+          </p>
+          <p>
+            {{user.bio}}
+          </p>
+          <p>
+            {{user.hireable}}
+          </p>
+          <p>
+            {{user.location}}
+          </p>
+          <p><a href="{{user.html_url}}" class="btn btn-success btn-xl" target="blank">More on Github</a></p>
+        </div>
+      </div>
+    </div>
+
+  <div class="col">
+      <div *ngIf="repository">
+        <p>{{repository.name}}</p>
+      </div>
+    </div>
+  </div>
+</div>
