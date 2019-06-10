@@ -4,8 +4,8 @@
 
 export const environment = {
   production: false,
-  apiUrl:"https://api.github.com/users/roychela?access_token=8f0f01599d36f6ac941669fb5b9e0d7cd24b2366",
-  secureApiUrl :"https://api.github.com/users/roychela?access_token=8f0f01599d36f6ac941669fb5b9e0d7cd24b2366"
+  apiUrl:"https://api.github.com/users/roychela?access_token=952cb64e2c45769f00ad1470040cedaeb195f709",
+  secureApiUrl :"https://api.github.com/users/roychela?access_token=952cb64e2c45769f00ad1470040cedaeb195f709"
 };
 
 /*
