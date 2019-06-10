@@ -20,7 +20,7 @@ export class UserService {
       repo: string;
     }
     const promise = new Promise((resolve, reject) => {
-      var url = (environment.secureApiUrl);
+      var url = ('https://api.github.com/users/' + '?access_token=' + environment.apiUrl);
 
       this.http.get<ApiResponse>(url).toPromise().then(
         (response) => {
