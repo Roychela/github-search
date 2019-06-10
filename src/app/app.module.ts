@@ -5,6 +5,7 @@ import { AppComponent } from './app.component';
 import { ProfileComponent } from './profile/profile.component';
 import { RepoService } from './repo.service';
 import { UserService } from './user.service';
+import { RoutingModule } from './routing/routing.module';
 import { FormsModule } from '@angular/forms'
 import { HttpClientModule } from '@angular/common/http';
 import { HttpModule } from '@angular/http';
@@ -20,6 +21,7 @@ import { HttpModule } from '@angular/http';
     HttpModule,
     FormsModule,
     HttpClientModule,
+    RoutingModule
 
   ],
   providers: [UserService,
