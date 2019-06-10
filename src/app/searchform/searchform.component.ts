@@ -5,11 +5,11 @@ import { HttpClient } from '@angular/common/http';
 
 
 @Component({
-  selector: 'app-search',
-  templateUrl: './search.component.html',
-  styleUrls: ['./search.component.css']
+  selector: 'app-searchform',
+  templateUrl: './searchform.component.html',
+  styleUrls: ['./searchform.component.css']
 })
-export class SearchComponent implements OnInit {
+export class SearchformComponent implements OnInit {
   reponame: Repo;
   user: any;
   username: string;

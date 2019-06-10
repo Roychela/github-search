@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ProfileComponent } from './../profile/profile.component';
-import { SearchComponent } from './../search/search.component';
+import { SearchComponent } from './../searchform/searchform.component';
 import { RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
